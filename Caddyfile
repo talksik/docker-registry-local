@@ -1,4 +1,4 @@
-192.168.50.63:5000 {
+192.168.50.63 {
   tls internal
-  reverse_proxy http://localhost:5000
+  reverse_proxy registry:5000
 }
