@@ -1,4 +1,6 @@
-https://192.168.50.63:5000 {
-  tls internal
-  reverse_proxy http://localhost:5000
+192.168.50.63 {
+  reverse_proxy localhost:5000
+  tls {
+    on_demand
+  }
 }
